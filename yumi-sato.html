@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FILE NO.06 — Yumi Sato | Nova Prisma Digital</title>
+<meta name="description" content="Yumi Sato. Tokyo, Japan. Content Creator · Eastern Division. FILE NO.06 — Nova Prisma Digital Model Collective.">
+<meta property="og:title" content="FILE NO.06 — Yumi Sato | Nova Prisma">
+<meta property="og:url" content="https://novaprismadigital.com/yumi-sato">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --gold: #C9A96E; --gold-light: #E8D5B0; --black: #0A0A0A; --dark: #1A1A1A; --mid: #2A2A2A; --text: #E8E0D5; --muted: #8A8278; }
+  html { scroll-behavior: smooth; background: #0A0A0A; }
+  body { background: #0A0A0A; color: var(--text); font-family: 'Montserrat', sans-serif; font-weight: 300; letter-spacing: 0.05em; overflow-x: hidden; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.5rem 3rem; display: flex; align-items: center; justify-content: space-between; background: rgba(10,10,10,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid #1A1A1A; }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 300; letter-spacing: 0.3em; color: var(--text); text-decoration: none; text-transform: uppercase; }
+  .nav-back { font-size: 0.55rem; letter-spacing: 0.3em; color: var(--muted); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+  .nav-back:hover { color: var(--gold); }
+  .file-hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; }
+  .file-hero-left { position: relative; overflow: hidden; }
+  .file-hero-left img { width: 100%; height: 100%; object-fit: cover; object-position: top; filter: grayscale(15%); }
+  .file-hero-left::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, transparent 70%, #0A0A0A 100%); }
+  .file-hero-right { display: flex; flex-direction: column; justify-content: center; padding: 4rem 4rem 4rem 3rem; }
+  .file-number { font-size: 0.5rem; letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase; font-family: 'Montserrat', sans-serif; margin-bottom: 1.2rem; }
+  .file-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 300; line-height: 1; color: var(--text); margin-bottom: 0.8rem; }
+  .file-city { font-size: 0.6rem; letter-spacing: 0.3em; color: var(--muted); text-transform: uppercase; margin-bottom: 0.5rem; }
+  .file-role { font-size: 0.55rem; letter-spacing: 0.25em; color: var(--gold); text-transform: uppercase; margin-bottom: 2.5rem; }
+  .file-divider { width: 40px; height: 1px; background: var(--gold); margin-bottom: 2.5rem; }
+  .file-bio { font-size: 0.82rem; line-height: 2; color: var(--muted); max-width: 420px; margin-bottom: 2.5rem; }
+  .file-sig-label { font-size: 0.45rem; letter-spacing: 0.35em; color: var(--gold); text-transform: uppercase; margin-bottom: 0.6rem; }
+  .file-sig { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.9rem; color: var(--text); line-height: 1.8; margin-bottom: 2.5rem; }
+  .file-links { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+  .file-link { display: inline-block; padding: 0.6rem 1.5rem; border: 1px solid var(--mid); color: var(--muted); text-decoration: none; font-size: 0.5rem; letter-spacing: 0.3em; text-transform: uppercase; transition: all 0.2s; }
+  .file-link:hover { border-color: var(--gold); color: var(--gold); }
+  .file-link.primary { border-color: var(--gold); color: var(--gold); }
+  .full-divider { width: 100%; height: 1px; background: linear-gradient(to right, transparent, #2A2A2A 20%, #2A2A2A 80%, transparent); }
+  .gallery-section { padding: 6rem 4rem; max-width: 1400px; margin: 0 auto; }
+  .section-label { font-size: 0.45rem; letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase; margin-bottom: 1rem; }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--text); margin-bottom: 3rem; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2px; }
+  .gallery-grid img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; filter: grayscale(10%); transition: filter 0.3s, transform 0.3s; cursor: pointer; }
+  .gallery-grid img:hover { filter: grayscale(0%); transform: scale(1.01); }
+  .identity-section { padding: 6rem 4rem; background: #0D0D0D; }
+  .identity-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .identity-label { font-size: 0.45rem; letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase; margin-bottom: 1rem; }
+  .identity-value { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 300; color: var(--text); line-height: 1.8; }
+  .cta-section { padding: 6rem 4rem; text-align: center; }
+  .cta-label { font-size: 0.45rem; letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase; margin-bottom: 1.5rem; }
+  .cta-title { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; color: var(--text); margin-bottom: 1rem; }
+  .cta-sub { font-size: 0.7rem; letter-spacing: 0.15em; color: var(--muted); margin-bottom: 3rem; }
+  .cta-btn { display: inline-block; padding: 1rem 3rem; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; font-size: 0.55rem; letter-spacing: 0.3em; text-transform: uppercase; transition: all 0.3s; }
+  .cta-btn:hover { background: var(--gold); color: #0A0A0A; }
+  footer { padding: 2rem 4rem; border-top: 1px solid #1A1A1A; display: flex; align-items: center; justify-content: space-between; }
+  .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 0.8rem; letter-spacing: 0.3em; color: var(--muted); }
+  .footer-copy { font-size: 0.45rem; letter-spacing: 0.2em; color: #3A3A3A; }
+  .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 999; align-items: center; justify-content: center; }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-height: 90vh; max-width: 90vw; object-fit: contain; }
+  .lightbox-close { position: absolute; top: 2rem; right: 2rem; background: none; border: none; color: var(--muted); font-size: 1.5rem; cursor: pointer; transition: color 0.2s; }
+  .lightbox-close:hover { color: var(--gold); }
+  @media (max-width: 768px) {
+    nav { padding: 1.2rem 1.5rem; }
+    .file-hero { grid-template-columns: 1fr; min-height: auto; }
+    .file-hero-left { height: 60vh; }
+    .file-hero-left::after { background: linear-gradient(to bottom, transparent 60%, #0A0A0A 100%); }
+    .file-hero-right { padding: 2.5rem 1.5rem; }
+    .gallery-section { padding: 4rem 1.5rem; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .identity-section { padding: 4rem 1.5rem; }
+    .identity-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .cta-section { padding: 4rem 1.5rem; }
+    footer { padding: 2rem 1.5rem; flex-direction: column; gap: 1rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="https://novaprismadigital.com" class="nav-logo">Nova Prisma</a>
+  <a href="https://novaprismadigital.com/#collective" class="nav-back">← Back to Collective</a>
+</nav>
+<section class="file-hero">
+  <div class="file-hero-left">
+    <img src="https://drive.google.com/thumbnail?id=1mAJ1A6VgEClu1fMDuOuzUSLMdWou3w1N&sz=w800" alt="Yumi Sato">
+  </div>
+  <div class="file-hero-right">
+    <div class="file-number">FILE NO.06</div>
+    <h1 class="file-name">Yumi Sato</h1>
+    <div class="file-city">📍 Tokyo, Japan</div>
+    <div class="file-role">Content Creator · Eastern Division</div>
+    <div class="file-divider"></div>
+    <p class="file-bio">Five-star everything. Always. Tokyo luxury is her language, and she speaks it fluently. Yumi turns hotel lobbies into runways and city streets into editorials.</p>
+    <div class="file-sig-label">Signature</div>
+    <div class="file-sig">Caramel balayage hair · Almond dark eyes · Gold 'Yumi' necklace</div>
+    <div class="file-links"><a href="#" class="file-link">Instagram</a><a href="https://novaprismadigital.com" class="file-link">Nova Prisma</a></div>
+  </div>
+</section>
+<div class="full-divider"></div>
+<section class="identity-section">
+  <div class="identity-inner">
+    <div><div class="identity-label">Origin</div><div class="identity-value">Tokyo, Japan<br>Eastern Division — Nova Prisma HQ Zurich</div></div>
+    <div><div class="identity-label">Specialization</div><div class="identity-value">Editorial · Commercial<br>Campaign · Walk</div></div>
+    <div><div class="identity-label">File Status</div><div class="identity-value">Active · Available for Collaboration</div></div>
+    <div><div class="identity-label">Collective</div><div class="identity-value">Nova Prisma Digital<br>Est. 2026 · Zurich, Switzerland</div></div>
+  </div>
+</section>
+<div class="full-divider"></div>
+<section class="gallery-section">
+  <div class="section-label">Nova Prisma Digital · FILE NO.06</div>
+  <h2 class="section-title">Daily Life</h2>
+  <div class="gallery-grid" id="gallery"></div>
+</section>
+<div class="full-divider"></div>
+<section class="cta-section">
+  <div class="cta-label">Nova Prisma Digital Model Collective</div>
+  <h2 class="cta-title">Meet the Collective</h2>
+  <p class="cta-sub">15 identities. 15 cities. 1 universe.</p>
+  <a href="https://novaprismadigital.com/#collective" class="cta-btn">View All Files</a>
+</section>
+<footer>
+  <div class="footer-logo">Nova Prisma Digital · Zurich, Switzerland</div>
+  <div class="footer-copy">© 2026 Nova Prisma Digital Model Collective. All rights reserved.</div>
+</footer>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+  const galleryIds = ["1NA1-h3WMOGODT7s9-XylH7DmudbrpWsy", "1PhaV7wFXCUXHuvuSgPF1iaXfVnoXYd1x", "10soMQG0YOO0JiWOzhg3yBhvTc3IG5HUp", "1w7ISOJFDFyhROTyswCn6DwLQ-a8CVD6-", "16D468A4YxTFs4vQF-zuK6Q4KbJ7ng9AY"];
+  const grid = document.getElementById('gallery');
+  galleryIds.forEach(id => {
+    const img = document.createElement('img');
+    img.src = `https://drive.google.com/thumbnail?id=${id}&sz=w600`;
+    img.alt = 'Yumi Sato';
+    img.loading = 'lazy';
+    img.onclick = () => openLightbox(img.src.replace('w600','w1200'));
+    grid.appendChild(img);
+  });
+  function openLightbox(src) { document.getElementById('lightbox-img').src = src; document.getElementById('lightbox').classList.add('active'); }
+  function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); }
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>
