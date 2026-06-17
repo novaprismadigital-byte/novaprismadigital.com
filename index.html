@@ -547,29 +547,30 @@
 
 <script>
   const videoData = [
-    { name: "Freya Hansen", url: "https://vt.tiktok.com/ZSQp5d3eT/" },
-    { name: "Samira Ricci", url: "https://vt.tiktok.com/ZSQp59u3c/" },
-    { name: "Mila Noir", url: "https://vt.tiktok.com/ZSQp5FfKW/" },
-    { name: "Selen Vargas", url: "https://vt.tiktok.com/ZSQp5r5qy/" },
-    { name: "Li Mei", url: "https://vt.tiktok.com/ZSQp5B1y5/" },
-    { name: "Yumi Sato", url: "https://vt.tiktok.com/ZSQp59gLm/" },
-    { name: "Zara Okafor", url: "https://vt.tiktok.com/ZSQp53rSD/" },
-    { name: "Ingrid \"Indy\" Larsson", url: "https://vt.tiktok.com/ZSQp5owXk/" },
-    { name: "Aisha Al-Rashid", url: "https://vt.tiktok.com/ZSQp5KHhv/" },
-    { name: "Chloé Moreau", url: "https://vt.tiktok.com/ZSQp5gMrq/" },
-    { name: "Sofia \"La Pantera\" Vasquez", url: "https://vt.tiktok.com/ZSQp5w8jY/" },
-    { name: "Anastasia \"Stas\" Volkov", url: "https://vt.tiktok.com/ZSQp5C561/" },
-    { name: "Elsa Van Der Berg", url: "https://vt.tiktok.com/ZSQp5XBcd/" },
-    { name: "Ji-Yoon Park", url: "https://vt.tiktok.com/ZSQp5g5JE/" },
-    { name: "Priya Sharma", url: "https://vt.tiktok.com/ZSQpaRMNR/" }
+    { name: "Freya Hansen", url: "https://www.tiktok.com/@nova_collective_prisma/video/7651564638391307537" },
+    { name: "Samira Ricci", url: "https://www.tiktok.com/@nova_collective_prisma/video/7651567471052229904" },
+    { name: "Mila Noir", url: "https://www.tiktok.com/@nova_collective_prisma/video/7651569304177020161" },
+    { name: "Selen Vargas", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652054760543079681" },
+    { name: "Li Mei", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652059768609148176" },
+    { name: "Yumi Sato", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652062129394076945" },
+    { name: "Zara Okafor", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652202150969314576" },
+    { name: "Ingrid \"Indy\" Larsson", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652205060268543249" },
+    { name: "Aisha Al-Rashid", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652205890019282193" },
+    { name: "Chloé Moreau", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652210804187532560" },
+    { name: "Sofia \"La Pantera\" Vasquez", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652212776303152400" },
+    { name: "Anastasia \"Stas\" Volkov", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652217603213036816" },
+    { name: "Elsa Van Der Berg", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652244904021740801" },
+    { name: "Ji-Yoon Park", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652247528456342801" },
+    { name: "Priya Sharma", url: "https://www.tiktok.com/@nova_collective_prisma/video/7652256644977495312" }
   ];
 
   const slider = document.getElementById('video-slider');
   videoData.forEach(v => {
+    const videoId = v.url.match(/video\/(\d+)/)[1];
     const card = document.createElement('div');
     card.className = 'video-card';
     card.innerHTML = `
-      <blockquote class="tiktok-embed" cite="${v.url}" data-video-id="" style="max-width: 260px;min-width:260px;margin:0;">
+      <blockquote class="tiktok-embed" cite="${v.url}" data-video-id="${videoId}" style="max-width: 260px;min-width:260px;margin:0;">
         <section>
           <a target="_blank" href="${v.url}">@nova_collective_prisma</a>
         </section>
